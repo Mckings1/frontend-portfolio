@@ -1,4 +1,6 @@
 // Mobile menu toggle
+document.getElementById("current-year").textContent = new Date().getFullYear();
+
 const mobileMenuButton = document.getElementById("mobile-menu-button");
 const mobileMenu = document.getElementById("mobile-menu");
 
@@ -61,6 +63,15 @@ tailwind.config = {
   },
 };
 
+//certificate responds
+function openModal(img) {
+  document.getElementById("modalImg").src = img.src;
+  document.getElementById("imgModal").classList.remove("hidden");
+}
+
+function closeModal() {
+  document.getElementById("imgModal").classList.add("hidden");
+}
 // Start typing animation after page loads
 setTimeout(typeWriter, 1000);
 

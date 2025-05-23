@@ -373,9 +373,46 @@
           <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 mb-4">
             <i class="fas fa-database text-3xl"></i>
           </div>
-          <h3 class="font-semibold">MongoDB</h3>
+          <h3 class="font-semibold">SQL</h3>
           <div class="w-full bg-gray-200 rounded-full h-2 mt-4">
             <div class="bg-primary h-2 rounded-full" style="width: 70%"></div>
+          </div>
+        </div>
+
+        <!-- Skill 7 -->
+        <div
+          class="skill-item bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 flex flex-col items-center">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center text-green-600 mb-4">
+            <i class="fas fa-cogs text-3xl"></i>
+          </div>
+          <h3 class="font-semibold">Workflow Automation</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mt-4">
+            <div class="bg-primary h-2 rounded-full" style="width: 75%"></div>
+          </div>
+        </div>
+
+        <!-- Skill 8 -->
+
+        <div
+          class="skill-item bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 flex flex-col items-center">
+          <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mb-4">
+            <i class="fas fa-plug text-3xl"></i>
+          </div>
+          <h3 class="font-semibold">API Integration</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mt-4">
+            <div class="bg-primary h-2 rounded-full" style="width: 70%"></div>
+          </div>
+        </div>
+
+        <!-- Skill: 9 App Support -->
+        <div
+          class="skill-item bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 flex flex-col items-center">
+          <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center text-red-500 mb-4">
+            <i class="fas fa-tools text-3xl"></i>
+          </div>
+          <h3 class="font-semibold">App Support</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mt-4">
+            <div class="bg-primary h-2 rounded-full" style="width: 80%"></div>
           </div>
         </div>
       </div>
@@ -424,6 +461,26 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- Certification Thumbnails -->
+      <h4 class="text-lg font-medium mb-4 mt-4 text-center">Certifications</h4>
+      <div class="flex flex-wrap justify-center gap-4">
+        <h4></h4>
+        <img src="meta Front-End certificate.png" alt="Meta certificate" class="w-40 rounded shadow-md cursor-pointer"
+          onclick="openModal(this)">
+        <img src="Js certification.JPG" alt="JS" class="w-40 rounded shadow-md cursor-pointer"
+          onclick="openModal(this)">
+        <img src="html css udemy.jpg" alt="html css" class="w-40 rounded shadow-md cursor-pointer"
+          onclick="openModal(this)">
+        <img src="wordpress.jpg" alt="wordpress" class="w-40 rounded shadow-md cursor-pointer"
+          onclick="openModal(this)">
+      </div>
+
+      <!-- Modal -->
+      <div id="imgModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50"
+        onclick="closeModal()">
+        <img id="modalImg" src="" alt="Full view" class="max-w-full max-h-full rounded shadow-lg">
       </div>
     </div>
   </section>
@@ -564,25 +621,27 @@
           <div class="space-y-4">
             <h3 class="text-lg font-semibold">Services</h3>
             <ul class="space-y-2">
-              <li><a href="#ui-ux" class="text-gray-400 hover:text-white transition">Web Developer</a></li>
-              <li><a href="#mobile" class="text-gray-400 hover:text-white transition">Frontend Engineer</a></li>
-              <li><a href="#website" class="text-gray-400 hover:text-white transition">WordPress Developer</a></li>
-              <li><a href="#user-experience" class="text-gray-400 hover:text-white transition">Full Stack Developer</a>
+              <li><a href="#webdev" class="text-gray-400 hover:text-white transition">Web Developer</a></li>
+              <li><a href="#frontendEng" class="text-gray-400 hover:text-white transition">Frontend Engineer</a></li>
+              <li><a href="#wordpress" class="text-gray-400 hover:text-white transition">WordPress Developer</a></li>
+              <li><a href="#fullstack" class="text-gray-400 hover:text-white transition">Full Stack Developer</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
       <div class="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-        <p class="text-gray-400 text-sm">© 2025 Portfolio. All rights reserved.</p>
+
+        <p>&copy; <span id="current-year"></span> McKing's Portfolio. All rights reserved.</p>
         <div class="flex space-x-6">
-          <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+          <a href="https://www.linkedin.com/in/oluwasegun-michael-alabi-7b2506177/"
+            class="text-gray-400 hover:text-white transition duration-300">
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+          <a href="https://twitter.com/alabioluwaseg14" class="text-gray-400 hover:text-white transition duration-300">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+          <a href="https://github.com/Mckings1" class="text-gray-400 hover:text-white transition duration-300">
             <i class="fab fa-github"></i>
           </a>
           <a href="#" class="text-gray-400 hover:text-white transition duration-300">
