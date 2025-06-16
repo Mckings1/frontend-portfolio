@@ -8,13 +8,22 @@ mobileMenuButton.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 });
 
+//years of experience
+const startYear = 2022;
+const currentYear = new Date().getFullYear();
+const experience = currentYear - startYear;
+document.getElementById("experience").innerText = `${experience}+ years`;
+
+document.getElementById("yoe1").innerText = `${experience}+ years`;
+document.getElementById("yoe2").innerText = `${experience}+ years`;
 // Typing animation
 const typingText = document.getElementById("typing-text");
 const professions = [
-  "Web Developer",
-  "WordPress Developer",
+  "Software Engineer",
   "Frontend Engineer",
-  "Full Stack Developer",
+  "Web Developer",
+  "AI/Automation Engineer",
+  "WordPress Developer",
 ];
 let professionIndex = 0;
 let charIndex = 0;
